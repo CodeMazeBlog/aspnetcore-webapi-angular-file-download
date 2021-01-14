@@ -1,0 +1,13 @@
+<div class="row" style="margin-bottom:15px;">
+    <div class="col-md-3">
+      <button type="button" class="btn btn-success" (click)="download()">Download File</button>
+    </div>
+    <div class="col-md-4">
+      <span class="download" *ngIf="progress > 0">
+        {{progress}}%
+      </span>
+      <span class="download">
+        {{message}}
+      </span>
+    </div>
+</div>
